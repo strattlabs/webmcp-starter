@@ -1,0 +1,11 @@
+{
+  "name": "webmcp-starter",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A minimal WebMCP reference page: a to-do list that exposes its features to in-browser AI agents via document.modelContext.registerTool. Educational scaffold.",
+  "keywords": ["webmcp", "model-context-protocol", "ai-agents", "chrome", "origin-trial"],
+  "license": "MIT",
+  "scripts": {
+    "serve": "npx --yes serve ./public"
+  }
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WebMCP Starter — a tiny agent-ready to-do list</title>
+
+    <!--
+      Origin trial token.
+      To exercise WebMCP via the origin trial, register your origin at
+      https://developer.chrome.com/origintrials and paste the token below.
+      Without it, the page still works as a normal to-do list; the WebMCP tools
+      simply won't be registered (see the status banner).
+    -->
+    <!-- <meta http-equiv="origin-trial" content="PASTE_YOUR_ORIGIN_TRIAL_TOKEN_HERE" /> -->
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Agent-ready to-do list</h1>
+      <p class="lede">
+        A minimal page that exposes its own features to an in-browser AI agent
+        via <a href="https://developer.chrome.com/docs/ai/webmcp/imperative-api">WebMCP</a>.
+        Everything an agent can do here, a human can do too — the tools are wired
+        to the same UI.
+      </p>
+
+      <p id="webmcp-status" class="status" role="status">Checking for WebMCP…</p>
+
+      <form id="add-form" autocomplete="off">
+        <label for="todo-input">New task</label>
+        <input id="todo-input" name="task" type="text" placeholder="Buy milk" required />
+        <button type="submit">Add</button>
+      </form>
+
+      <ul id="todo-list" aria-label="To-do items"></ul>
+    </main>
+
+    <script type="module" src="./tools.js"></script>
+  </body>
+</html>
