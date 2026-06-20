@@ -1,5 +1,7 @@
 # webmcp-starter
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) · [strattlabs.com](https://strattlabs.com)
+
 A minimal, well-commented reference page that exposes its own features to an
 in-browser AI agent via **[WebMCP](https://developer.chrome.com/docs/ai/webmcp/imperative-api)**
 (the Web Model Context Protocol). It's a tiny to-do list where every tool an agent
@@ -75,3 +77,16 @@ page *exposes* browser-side tools to an in-browser agent via WebMCP.
 ## License
 
 [MIT](LICENSE) © 2026 Stratt Labs.
+
+---
+
+## Part of the Stratt Labs toolkit for the agentic web
+
+Small, standards-friendly tools from [Stratt Labs](https://strattlabs.com):
+
+- [agent-readiness-manifest](https://github.com/strattlabs/agent-readiness-manifest)
+  — an open declaration spec for agent discovery.
+- [llms-txt-kit](https://github.com/strattlabs/llms-txt-kit) — generate and
+  validate `llms.txt` / `llms-full.txt` files.
+- [schema-for-agents](https://github.com/strattlabs/schema-for-agents) — JSON-LD
+  recipes for agent-legible commerce and content.
